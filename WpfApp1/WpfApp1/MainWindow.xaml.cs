@@ -24,10 +24,11 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-
-            Button btnLoadTextFile = new Button();
-            btnLoadTextFile.Name = "btnLoadTextFile";
-            btnLoadTextFile.Click += btnLoadTextFile_Click;
+            //last slash in dirrectory name
+            string strFileNameAndPath = txtFileNameAndPath.Text;
+            int intPosOfLastSlash = strFileNameAndPath.LastIndexOf(System.IO.Path.DirectorySeparatorChar);
+            string strPath = strFileNameAndPath.Substring(0, intPosOfLastSlash);            
+            lstBoxFileNames.ItemsSource= Directory.EnumerateFiles(strPath);
 
 
 

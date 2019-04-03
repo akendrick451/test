@@ -11,6 +11,7 @@
         <TextBox x:Name="txtFileNameAndPath" HorizontalAlignment="Left" Height="23" Margin="329,29,0,0" TextWrapping="Wrap" Text="E:\chashtest.txt" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSaveTextFile" Content="SaveTextFile" HorizontalAlignment="Left" Margin="502,28,0,0" VerticalAlignment="Top" Width="74" Click="btnSaveTextFile_Click"/>
         <TextBox x:Name="txtContent" HorizontalAlignment="Left" Height="252" Margin="230,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="442"/>
+        <ListBox x:Name="lstBoxFileNames" HorizontalAlignment="Left" Height="252" Margin="46,77,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
